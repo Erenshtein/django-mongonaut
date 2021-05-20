@@ -157,7 +157,7 @@ class MongoModelFormBaseMixin(object):
                     embedded_key_class = None
                     if set_list_class:
                         field_value.widget.attrs['class'] += " listField".format(base_key)
-                        embedded_key_class = make_key(field_key, exclude_last_string=True)
+                        embedded_key_class = make_key(form_key, exclude_last_string=True)
 
                     field_value.widget.attrs['class'] += " embeddedField"
 
